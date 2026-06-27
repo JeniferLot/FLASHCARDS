@@ -1,22 +1,37 @@
-/*removendo estilizações padroes*/
+/* Removendo estilizações padrões */
 *{
-box-sizing: border-box;
-margin: 0;/*espaço ao redor dos elementos*/
-padding: 0;/*espaçamento interno dos elementos*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.cabecalho {
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 15px 25px;
+/* Faz o body ocupar toda a tela */
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-.cartao {
-width: 260px;/*largura*/
-height: 200px;/*altura*/
+/* Cabeçalho */
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
 }
 
-.cartao-imagem {
-width: 100%; /*faz a imagem ocupar 100% da largura do cartão */
+/* Main ocupa o espaço restante da página */
+main{
+    flex: 1;
+}
+
+/* Cartão */
+.cartao{
+    width: 260px;
+    height: 200px;
+}
+
+/* Imagem do cartão */
+.cartao-imagem{
+    width: 100%;
 }
